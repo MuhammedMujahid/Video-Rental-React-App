@@ -5,6 +5,7 @@ import { paginate } from "../utils/paginate";
 import ListGroup from "./common/listGroup";
 import { getGenres } from "../services/fakeGenreService";
 import MoviesTable from "./moviesTable";
+import NavBar from "./common/navBar";
 import _ from "lodash";
 
 class Movies extends Component {
