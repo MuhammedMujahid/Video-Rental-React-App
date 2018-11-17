@@ -7,6 +7,7 @@ import { getGenres } from "../services/fakeGenreService";
 import MoviesTable from "./moviesTable";
 import NavBar from "./common/navBar";
 import _ from "lodash";
+import { Link } from "react-router-dom";
 
 class Movies extends Component {
   state = {
@@ -80,6 +81,13 @@ class Movies extends Component {
           />
         </div>
         <div className="col">
+          <Link
+            to="/movies/new"
+            className="btn btn-primary"
+            style={{ marginBottom: 20 }}
+          >
+            New Movie
+          </Link>
           <p>{totalCount} Available movies</p>
           <MoviesTable
             movies={movies}
