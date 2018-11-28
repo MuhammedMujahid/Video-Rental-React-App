@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { genres } from "../../services/fakeGenreService";
 import _ from "lodash";
 
 class TableBody extends Component {
